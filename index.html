@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html5css3</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		text-align: center;
+	}
+	.item {
+		margin: 30px auto;
+		width: 300px;
+		height: 300px;
+		border: 1px solid;
+	}
+
+	.item1 {
+		border-radius: 10px;
+	}
+
+	.item2 {
+		border-radius: 50%;
+	}
+
+	.item3 {
+		box-shadow: 5px 5px 10px 0 #f67300;
+	}
+
+	.item4 {
+		transform: scale(.5);
+	}
+
+	.item5 {
+		transform: scale(1.2);
+	}
+
+	.item6 {
+		transform: translate(-20px,-20px);
+	}
+
+	.item7 {
+		transform: rotate(30deg);
+	}
+
+	.item8 {
+		transform: perspective( 600px ) rotateY( 45deg ) translateZ(100px);
+	}
+
+	.item9 {
+		background:linear-gradient(to top,orange,green);
+	}
+
+	.item10 {
+		background-color: #f67300;
+		transition: all .5s;
+	}
+	.item10:hover {
+		background-color: blue;
+	}
+
+	.item11:hover {
+		animation: 1s rainbow forwards;
+	}	
+
+	@keyframes rainbow {
+  		0% { background: #c00; }
+  		50% { background: orange; }
+  		100% { background: yellowgreen; }
+	}
+</style>
+<body>
+	<h2>圆角， 圆形</h2>
+	<div class="item item1"></div>
+	<div class="item item2"></div>
+
+	<h2>div 阴影</h2>
+	<div class="item item3"></div>
+
+	<h2>2D 转换：放大、缩小、偏移、旋转</h2>
+	<div class="item item4"></div>
+	<div class="item item5"></div>
+	<div class="item item6"></div>
+	<div class="item item7"></div>
+
+	<h2>3D 转换：移动、旋转</h2>
+	<div class="item item8"></div>
+
+	<h2>背景色渐变</h2>
+	<div class="item item9"></div>
+
+	<h2>过渡效果</h2>
+	<div class="item item10"></div>
+
+	<h2>动画</h2>
+	<div class="item item11"></div>
+</body>
+</html>
